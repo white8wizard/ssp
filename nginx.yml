@@ -1,7 +1,7 @@
 ---
 - name: Update web servers
   hosts: all
-  remote_user: root
+  remote_user: ansible
 
   tasks:
   - name: Ensure nginx is at the latest version
