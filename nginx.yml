@@ -2,7 +2,9 @@
 - name: Update web servers
   hosts: all
   remote_user: ansible
-
+  become: yes
+  become_user: root
+  
   tasks:
   - name: Ensure nginx is at the latest version
     ansible.builtin.yum:
