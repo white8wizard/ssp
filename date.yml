@@ -1,0 +1,8 @@
+---
+
+- hosts: all
+
+  tasks:
+  - name: date
+    command: date
+    register: date
